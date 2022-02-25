@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .total
+  {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  a
+  {
+      text-decoration: none;
+  }
+
+  body { 
+    background: url(images/s-1ef305afa26520a853ed4709a4a3c9f2e137bc30.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.header
+{
+    font-size: 200%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+
+.header p
+{
+    padding-top: 1%;
+    padding-left: 2%;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  a:active {
+    color: rgb(29, 29, 54);
+  }
+
+.input
+{
+    text-align: center;
+    width: 30%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 3%;
+    background-color: rgba(92, 92, 160, 0.158);
+    border-radius: 10%;
+}
+
+.input h1
+{
+    color: white;
+    padding: 5%;
+    font-size: 50px;
+}
+
+.input p
+{
+    color: white;
+    padding: 5%;
+    font-size: 30px;
+}
+
+#nameInput
+{
+    padding: 2%
+}
+
+#nameSubmit
+{
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.results
+{
+    text-align: center;
+    width: 30%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 3%;
+    background-color: rgba(92, 92, 160, 0.158);
+    border-radius: 10%;
+}
+
+#nameResults
+{
+    font-size: 200%;
+    color: white;
+}
+
+#probability
+{
+    color: white;
+}
+
+.footer
+{
+    font-size: 200%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+
+.footer p
+{
+    padding-top: 1%;
+    padding-left: 2%;
+}
