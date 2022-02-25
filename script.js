@@ -12,8 +12,7 @@ function getAge() {
             }).then(function (json) {
                 let results = "";
                 let upperName = value.charAt(0).toUpperCase() + value.slice(1);
-                results += '<h2>' + upperName + ",</h2>";
-                results += '<h2> you are ' + json.age + " years old</h2>"
+                results += '<h2>' + upperName + ', you are ' + json.age + " years old</h2>"
                 if (json.age == null) {
                     results = '<h2> Enter a real name </h2>';
                 }
@@ -26,13 +25,12 @@ function getAge() {
                 return response.json();
             }).then(function (json) {
                 let newResult = "";
-                newResult += '<h2>There is a ' + json.probability * 100 + "% probability that,</h2>";
-                newResult += '<h2> you are a';
+                newResult += '<h3>There is a ' + json.probability * 100 + "% probability that you are a";
 
                 if (json.gender == "male") {
-                    newResult += ' boy</h2>';
+                    newResult += ' boy</h3>';
                 } else {
-                    newResult += ' girl </h2>';
+                    newResult += ' girl </h3>';
                 }
                 
                 if(json.gender == null)
@@ -43,6 +41,11 @@ function getAge() {
                 if(value == "matt" || value == "Matt")
                 {
                     newResult = "<h2>You are 100% gay</h2>"
+                }
+
+                if(json.error == "Request limit reached")
+                {
+                    newResult = "<h2>Error, request limit reached for today, please come back tomorrow</h2>";
                 }
                 document.getElementById("probability").innerHTML = newResult;
             });

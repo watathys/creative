@@ -93,6 +93,8 @@ a:link {
 
 .results
 {
+    position: relative;
+    left: 31%;
     text-align: center;
     width: 30%;
     height: auto;
@@ -100,6 +102,15 @@ a:link {
     margin-left: 3%;
     background-color: rgba(92, 92, 160, 0.158);
     border-radius: 10%;
+}
+
+.results h2{
+    padding-top: 5%;
+}
+
+.results h3{
+    padding-top: 8%;
+    font-size: 25px;
 }
 
 #nameResults
